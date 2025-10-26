@@ -17,6 +17,12 @@ TryBud uses commitment contracts to help job seekers stay accountable:
 4. **Earn Rewards** - Complete quest → Get stake + yield + community bonus
 5. **NFT Badges** - Collect achievement badges for completed quests
 
+
+<video width="720" controls>
+  <source src="https://raw.githubusercontent.com/kaustubh1504/trybud/main/public/demo.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
 ---
 
 ## ✅ What's Implemented (Working Demo)

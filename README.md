@@ -15,13 +15,6 @@ TryBud uses commitment contracts to help job seekers stay accountable:
 2. **Stake USDC** - Lock funds in smart contract as commitment
 3. **Log Activities** - Prove your progress via blockchain transactions
 4. **Earn Rewards** - Complete quest → Get stake + yield + community bonus
-5. **NFT Badges** - Collect achievement badges for completed quests
-
-
-<video width="720" controls>
-  <source src="https://raw.githubusercontent.com/kaustubh1504/trybud/main/public/demo.mov" type="video/quicktime">
-  Your browser does not support the video tag.
-</video>
 
 ---
 
@@ -30,14 +23,12 @@ TryBud uses commitment contracts to help job seekers stay accountable:
 ### Smart Contracts (Deployed on Stellar Testnet)
 - ✅ **Quest Contract** - Create quests, log activities, track progress, distribute rewards
 - ✅ **Verification Contract** - Support for ZK proofs, LinkedIn oracle, manual verification
-- ✅ **Badge NFT Contract** - Mint achievement badges, track collections
 - ✅ **Yield Strategy Contract** - Framework for DeFi yield generation
 
 **Contract Addresses (Testnet):**
 ```
 Quest:        CDRND7PWAF6UKEEUQR6KRECAZOERIIYHJ6LV7345YTKQ6EXCULVVAJG6
 Verification: CCKAPFUJKTY5EKWJIG5AKWASFOTZCJZUXHJVO73THPUGZNROQXCLP3GJ
-Badge:        CBKINLELVYMKLD5GKBA5ANHOUWOAVXEW3AMHX762Z33GY6WLZTAHEYWT
 Yield:        CCW6NNSBEGJBS456GR62RWRD7TZ5VZUOVMGKDYAZH6RNDZWI2IEUC4YC
 ```
 
@@ -48,7 +39,7 @@ Yield:        CCW6NNSBEGJBS456GR62RWRD7TZ5VZUOVMGKDYAZH6RNDZWI2IEUC4YC
 - ✅ **Log Activity** - Blockchain transactions via Freighter wallet
 - ✅ **Wallet Integration** - Freighter wallet connection
 - ✅ **Protected Routes** - Authentication flow
-- ✅ **Animated UI** - BuddyCharacter with level-up animations
+- ✅ **Animated UI** - Character with level-up animations
 
 ### Core Features Working
 - ✅ Quest creation with different durations (7, 14, 30, 90 days)
@@ -70,6 +61,7 @@ Yield:        CCW6NNSBEGJBS456GR62RWRD7TZ5VZUOVMGKDYAZH6RNDZWI2IEUC4YC
 
 ### Frontend Features
 - ❌ Quest detail page with activity logs
+- ❌ NFT badge system (contract exists but not integrated)
 - ❌ Badge showcase gallery
 - ❌ Leaderboards
 - ❌ Social sharing
@@ -79,7 +71,6 @@ Yield:        CCW6NNSBEGJBS456GR62RWRD7TZ5VZUOVMGKDYAZH6RNDZWI2IEUC4YC
 ### Smart Contract Integration
 - ❌ Real USDC transfers (currently mocked for demo)
 - ❌ Actual DeFi yield generation (framework exists)
-- ❌ Badge minting on quest completion
 - ❌ Oracle verification endpoints
 
 ---
@@ -155,10 +146,6 @@ Verification Contract
 ├─ verify_linkedin_post() - Oracle verification
 └─ approve_manual_proof() - Admin approval
 
-Badge Contract
-├─ mint_quest_badge() - Award NFTs
-└─ get_badge_collection() - User's badges
-
 Yield Contract
 ├─ deposit() - Invest stakes in DeFi
 └─ withdraw() - Return stake + yield
@@ -210,7 +197,7 @@ src/
 - Contract Size: All under 64KB
 
 **Demo Stats:**
-- 4 Smart Contracts Deployed ✅
+- 3 Smart Contracts Deployed ✅
 - 3 Working Pages ✅
 - Real Blockchain Integration ✅
 - Sub-second Transactions ✅
